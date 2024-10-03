@@ -49,8 +49,12 @@ public class TelaPrincipal extends JFrame {
             arg0 -> JOptionPane.
                 showMessageDialog(TelaPrincipal.this, "Este é um exemplo\n" + "do uso de menus"));
 
-                new JOptionPane();
-                itemMenuSair.addActionListener(e -> System.exit(0));
+        new JOptionPane();
+        itemMenuSair.addActionListener(e -> System.exit(0));
+
+        new JOptionPane();
+                itemMenuClient.addActionListener(e -> System.exit(0));
+    
 
     }
 
