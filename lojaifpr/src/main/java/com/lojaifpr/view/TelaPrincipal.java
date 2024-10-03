@@ -4,6 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 
 public class TelaPrincipal extends JFrame {
     private static final long serialVersionUID = -346123942816557733L;
@@ -43,6 +44,13 @@ public class TelaPrincipal extends JFrame {
         menuAjuda.add(itemMenuSobre);
         menuAjuda.add(itemMenuSair);
 
+        new JOptionPane();
+        itemMenuSobre.addActionListener(
+            arg0 -> JOptionPane.
+                showMessageDialog(TelaPrincipal.this, "Este é um exemplo\n" + "do uso de menus"));
+
+                new JOptionPane();
+                itemMenuSair.addActionListener(e -> System.exit(0));
 
     }
 
