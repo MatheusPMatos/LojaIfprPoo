@@ -53,7 +53,7 @@ public class TelaPrincipal extends JFrame {
         itemMenuSair.addActionListener(e -> System.exit(0));
 
         new JOptionPane();
-                itemMenuClient.addActionListener(e -> System.exit(0));
+                itemMenuClient.addActionListener(e -> new TelaCrudClient());
     
 
     }
